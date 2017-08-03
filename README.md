@@ -9,5 +9,9 @@ a react project with mobx-react framework named wukong
 wukong是一个轻量级mobx-react框架。响应式编程，带来无比舒服的coding 体验。
 框架使用了webpack2打包, dll包优化, 热加载, router4, mock数据, postcss, 支持es7的async/await,生成器等。 
 
+# how to use
+clone整个项目，可以看看wukong的使用命令说明。去百度地图申请一个ak,填在index.html中yourAK的位置。
+第一次运行，直接 npm run redll即可。
+
 # author
 波比小金刚
