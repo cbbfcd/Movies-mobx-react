@@ -4,7 +4,7 @@ var path = require('path'),
 	HtmlWebpackPlugin = require('html-webpack-plugin'),
 	NyanProgressPlugin = require('nyan-progress-webpack-plugin'),
 	src = path.join(__dirname, '../src'),
-	bundleConfig = require("./dist/bundle-config.json"),
+	HappyPack = require('happypack'),
 	env = process.env.NODE_ENV;
 
 // 追踪警告
@@ -19,7 +19,7 @@ module.exports = {
         "./src/index"
 	],
 	output:{
-		path: path.join(__dirname, "../dist"),
+		path: path.join(__dirname, "../dist/static"),
         publicPath: "/",
         filename: "bundle.js"
 	},
@@ -43,7 +43,7 @@ module.exports = {
 	            test: /\.js[x]?$/,
 	            enforce: 'pre',
 	            use: [{
-	                loader: 'eslint-loader', 
+	                loader: 'happypack/loader?id=eslint', 
 	                options: { fix: true }
 	            }],
 	            include: path.resolve(__dirname, '../src/**/*.js'),
@@ -130,14 +130,19 @@ module.exports = {
 	},
     
 	plugins:[
+		new HappyPack({
+			verbose: false,
+			id: 'eslint',
+			threads: 4,
+			loaders: [ 'eslint-loader' ]
+		}),
 		new NyanProgressPlugin(),
 		new webpack.NamedModulesPlugin(),
         new webpack.HotModuleReplacementPlugin(),
         new webpack.NoEmitOnErrorsPlugin(),
         new HtmlWebpackPlugin({
         	hash: false,
-        	template: path.join(src, 'index.html'),
-        	bundleName: bundleConfig.vendor["js"],
+        	template: path.join(src, 'index.html')
         }),
         new webpack.ContextReplacementPlugin(/moment[\/\\]locale$/, /nb/),
         new webpack.DefinePlugin({
@@ -146,12 +151,7 @@ module.exports = {
 		  },
 		  __DEV__: env === 'development',
 		  __PROD__: env === 'production'
-		}),
-		// dll
-		new webpack.DllReferencePlugin({
-	        context: __dirname,
-	        manifest: require('./dist/manifest.json')
-	    })
+		})
 	]
 }
 

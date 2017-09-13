@@ -13,12 +13,12 @@ export default class Stars extends Component{
 		let stars = [];
 		if(_score.indexOf('.') !== -1){
 			for(let i = 0, len=~~_score; i<len; i++){
-				stars.push(<img src={ require("ASSET/images/full.png") } />);
+				stars.push(<img key={ 'ii'+i } src={ require("ASSET/images/full.png") } />);
 			}
-			stars.push(<img src={ require("ASSET/images/half.png") } />);
+			stars.push(<img key={ 'ii' } src={ require("ASSET/images/half.png") } />);
 		}else{
 			for(let i = 0, len=~~_score; i<len; i++){
-				stars.push(<img src={ require("ASSET/images/full.png") } />);
+				stars.push(<img key={ 'ii'+i } src={ require("ASSET/images/full.png") } />);
 			}
 		}
 		return(

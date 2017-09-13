@@ -1,0 +1,60 @@
+Hash: 0ba57f0c5f2cfe6efa9b
+Version: webpack 2.6.1
+Time: 29723ms
+              Asset       Size  Chunks                    Chunk Names
+        0.eaacd9.js    2.46 kB       0  [emitted]         
+      app.8dd867.js    1.63 MB       1  [emitted]  [big]  app
+   vendor.b8062d.js     376 kB       2  [emitted]  [big]  vendor
+mainifest.b3abeb.js    1.42 kB       3  [emitted]         mainifest
+     app.ae2ac9.css    47.3 kB       1  [emitted]         app
+      jquery.min.js    84.3 kB          [emitted]         
+      ../index.html  689 bytes          [emitted]         
+chunk    {0} 0.eaacd9.js 3.64 kB {1} [rendered]
+ [./node_modules/_babel-loader@7.0.0@babel-loader/lib/index.js?{"presets":[["es2015",{"modules":false}],"stage-0","react"],"plugins":["transform-async-to-generator","transform-decorators-legacy"]}!./src/components/top250.js] ./~/_babel-loader@7.0.0@babel-loader/lib?{"presets":[["es2015",{"modules":false}],"stage-0","react"],"plugins":["transform-async-to-generator","transform-decorators-legacy"]}!./src/components/top250.js 3.64 kB {0} [built]
+chunk    {1} app.8dd867.js, app.ae2ac9.css (app) 2.09 MB {2} [initial] [rendered]
+ [./node_modules/_babel-polyfill@6.23.0@babel-polyfill/lib/index.js] ./~/_babel-polyfill@6.23.0@babel-polyfill/lib/index.js 833 bytes {1} [built]
+ [./node_modules/_bundle-loader@0.5.5@bundle-loader/index.js?lazy!./src/components/top250.js] ./~/_bundle-loader@0.5.5@bundle-loader?lazy!./src/components/top250.js 183 bytes {1} [built]
+ [./node_modules/_react-hot-loader@3.0.0-beta.6@react-hot-loader/index.js] ./~/_react-hot-loader@3.0.0-beta.6@react-hot-loader/index.js 41 bytes {1} [built]
+ [./node_modules/_rfx-core@1.5.3@rfx-core/lib/index.js] ./~/_rfx-core@1.5.3@rfx-core/lib/index.js 1.22 kB {1} [built]
+ [./src/assets/style/main.scss] ./src/assets/style/main.scss 41 bytes {1} [built]
+ [./src/components/App.js] ./src/components/App.js 3.82 kB {1} [built]
+ [./src/components/Cinemas.js] ./src/components/Cinemas.js 2.69 kB {1} [built]
+ [./src/components/CommentPage.js] ./src/components/CommentPage.js 7.1 kB {1} [built]
+ [./src/components/HotMovieInfo.js] ./src/components/HotMovieInfo.js 5.6 kB {1} [built]
+ [./src/components/HotMovies.js] ./src/components/HotMovies.js 3.44 kB {1} [built]
+ [./src/index.js] ./src/index.js 1.02 kB {1} [built]
+ [./src/store/Movie.js] ./src/store/Movie.js 15.5 kB {1} [built]
+ [./src/store/index.js] ./src/store/index.js 110 bytes {1} [built]
+ [./src/utils/Bundle.js] ./src/utils/Bundle.js 2.94 kB {1} [built]
+    [0] multi ./src/index.js 28 bytes {1} [built]
+     + 1477 hidden modules
+chunk    {2} vendor.b8062d.js (vendor) 1.49 MB {3} [initial] [rendered]
+ [./node_modules/_lodash@4.17.4@lodash/lodash.js] ./~/_lodash@4.17.4@lodash/lodash.js 540 kB {2} [built]
+ [./node_modules/_mobx-react@4.2.1@mobx-react/index.js] ./~/_mobx-react@4.2.1@mobx-react/index.js 29.4 kB {2} [built]
+ [./node_modules/_mobx@3.1.15@mobx/lib/mobx.module.js] ./~/_mobx@3.1.15@mobx/lib/mobx.module.js 139 kB {2} [built]
+ [./node_modules/_react-dom@15.6.1@react-dom/index.js] ./~/_react-dom@15.6.1@react-dom/index.js 59 bytes {2} [built]
+ [./node_modules/_react-router-dom@4.1.1@react-router-dom/es/index.js] ./~/_react-router-dom@4.1.1@react-router-dom/es/index.js 925 bytes {2} [built]
+ [./node_modules/_react-router@4.1.2@react-router/es/Router.js] ./~/_react-router@4.1.2@react-router/es/Router.js 3.8 kB {2} [built]
+    [1] multi react react-dom react-router lodash mobx mobx-react react-router-dom 100 bytes {2} [built]
+ [./node_modules/_react-router@4.1.2@react-router/es/StaticRouter.js] ./~/_react-router@4.1.2@react-router/es/StaticRouter.js 6.03 kB {2} [built]
+ [./node_modules/_react-router@4.1.2@react-router/es/index.js] ./~/_react-router@4.1.2@react-router/es/index.js 637 bytes {2} [built]
+ [./node_modules/_react-router@4.1.2@react-router/es/matchPath.js] ./~/_react-router@4.1.2@react-router/es/matchPath.js 1.88 kB {2} [built]
+ [./node_modules/_react-router@4.1.2@react-router/es/withRouter.js] ./~/_react-router@4.1.2@react-router/es/withRouter.js 1.4 kB {2} [built]
+ [./node_modules/_react@15.6.1@react/lib/React.js] ./~/_react@15.6.1@react/lib/React.js 5.08 kB {2} [built]
+ [./node_modules/_react@15.6.1@react/react.js] ./~/_react@15.6.1@react/react.js 56 bytes {2} [built]
+ [./node_modules/_webpack@2.6.1@webpack/buildin/global.js] (webpack)/buildin/global.js 509 bytes {2} [built]
+ [./node_modules/_webpack@2.6.1@webpack/buildin/module.js] (webpack)/buildin/module.js 517 bytes {2} [built]
+     + 201 hidden modules
+chunk    {3} mainifest.b3abeb.js (mainifest) 0 bytes [entry] [rendered]
+Child html-webpack-plugin for "..\index.html":
+            Asset    Size  Chunks  Chunk Names
+    ../index.html  545 kB       0  
+    chunk    {0} ../index.html 541 kB [entry] [rendered]
+     [./node_modules/_html-webpack-plugin@2.28.0@html-webpack-plugin/lib/loader.js!./src/index.html] ./~/_html-webpack-plugin@2.28.0@html-webpack-plugin/lib/loader.js!./src/index.html 818 bytes {0} [built]
+     [./node_modules/_lodash@4.17.4@lodash/lodash.js] ./~/_lodash@4.17.4@lodash/lodash.js 540 kB {0} [built]
+     [./node_modules/_webpack@2.6.1@webpack/buildin/global.js] (webpack)/buildin/global.js 509 bytes {0} [built]
+     [./node_modules/_webpack@2.6.1@webpack/buildin/module.js] (webpack)/buildin/module.js 517 bytes {0} [built]
+Child extract-text-webpack-plugin:
+    chunk    {0} extract-text-webpack-plugin-output-filename 114 kB [entry] [rendered]
+     [./node_modules/_css-loader@0.28.4@css-loader/index.js?{"sourceMap":true}!./node_modules/_postcss-loader@2.0.5@postcss-loader/lib/index.js?{"sourceMap":true}!./node_modules/_resolve-url-loader@2.0.2@resolve-url-loader/index.js!./node_modules/_sass-loader@6.0.5@sass-loader/lib/loader.js?{"sourceMap":true}!./src/assets/style/main.scss] ./~/_css-loader@0.28.4@css-loader?{"sourceMap":true}!./~/_postcss-loader@2.0.5@postcss-loader/lib?{"sourceMap":true}!./~/_resolve-url-loader@2.0.2@resolve-url-loader!./~/_sass-loader@6.0.5@sass-loader/lib/loader.js?{"sourceMap":true}!./src/assets/style/main.scss 112 kB {0} [built]
+     [./node_modules/_css-loader@0.28.4@css-loader/lib/css-base.js] ./~/_css-loader@0.28.4@css-loader/lib/css-base.js 2.26 kB {0} [built]

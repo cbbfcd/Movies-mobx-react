@@ -97,7 +97,7 @@ export default class CommentPage extends Component{
 					<div className='c-body'>
 						{
 							comments.map((val,index)=>(
-								<div className='comment-item'>
+								<div className='comment-item' key={ 'cc'+index }>
 									<div className='title'>
 										<span><a>用户:</a> { val.nickName }</span>
 										<div>评分: 

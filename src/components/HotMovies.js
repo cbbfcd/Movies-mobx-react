@@ -46,6 +46,7 @@ export default class HotMovies extends Component{
 							<HotMovieTab 
 								data = { val }
 								movie = { movie }
+								key={ 'movie'+index }
 							/>
 						)
 					}
