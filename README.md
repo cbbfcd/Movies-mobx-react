@@ -1,4 +1,7 @@
 # Movies-mobx-react
+
+[![Greenkeeper badge](https://badges.greenkeeper.io/cbbfcd/Movies-mobx-react.svg)](https://greenkeeper.io/)
+
 a react project with mobx-react framework named wukong
 
 # description
